@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.9.14)  27 OCT 2016 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.9.14)  29 OCT 2016 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -756,38 +756,42 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
 
-Overfull \hbox (80.74869pt too wide) in paragraph at lines 44--45
+Overfull \hbox (79.32143pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
+[1
 
-Underfull \hbox (badness 3735) in paragraph at lines 57--57
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 3735) in paragraph at lines 69--69
 []\OT1/cmr/m/n/6 Buch wird ka-ta-lo-gi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 []\OT1/cmr/m/n/6 ''Buch nicht
  []
 
 
-Overfull \hbox (95.5074pt too wide) in paragraph at lines 54--61
+Overfull \hbox (95.5074pt too wide) in paragraph at lines 66--73
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (39.08546pt too wide) in paragraph at lines 92--97
+[][] 
+ []
 
 
-Overfull \hbox (39.08546pt too wide) in paragraph at lines 80--85
+Overfull \hbox (66.03465pt too wide) in paragraph at lines 102--107
 [][] 
  []
 
@@ -795,7 +799,7 @@ Overfull \hbox (39.08546pt too wide) in paragraph at lines 80--85
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (66.03465pt too wide) in paragraph at lines 90--95
+Overfull \hbox (32.78914pt too wide) in paragraph at lines 112--117
 [][] 
  []
 
@@ -803,7 +807,7 @@ Overfull \hbox (66.03465pt too wide) in paragraph at lines 90--95
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (32.78914pt too wide) in paragraph at lines 100--105
+Overfull \hbox (32.485pt too wide) in paragraph at lines 122--127
 [][] 
  []
 
@@ -811,45 +815,33 @@ Overfull \hbox (32.78914pt too wide) in paragraph at lines 100--105
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (32.485pt too wide) in paragraph at lines 110--115
+Overfull \hbox (35.7092pt too wide) in paragraph at lines 132--137
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (35.7092pt too wide) in paragraph at lines 120--125
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1
-
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2]
-(./1.aux) ) 
+[2] [3] (./1.aux) ) 
 Here is how much of TeX's memory you used:
- 13859 strings out of 494974
- 283735 string characters out of 6180014
- 327542 words of memory out of 5000000
- 16830 multiletter control sequences out of 15000+600000
+ 13892 strings out of 494974
+ 284377 string characters out of 6180014
+ 323187 words of memory out of 5000000
+ 16863 multiletter control sequences out of 15000+600000
  10737 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,11n,68p,428b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on 1.pdf (2 pages, 91863 bytes).
+ 55i,11n,68p,428b,1005s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on 1.pdf (3 pages, 84783 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
