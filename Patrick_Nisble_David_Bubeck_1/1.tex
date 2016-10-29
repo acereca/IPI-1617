@@ -1,11 +1,13 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{ngerman}
+\usepackage[german]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{rotating}
+\usepackage{rotfloat}
 \usetikzlibrary{arrows, automata, positioning}
 \begin{document}
 	\title{Übung Nr.1 zur Vorlesung IPI}
@@ -58,11 +60,11 @@
 			\caption{Fahrkartenautomat, m: Momentanbetrag, n = Sollbetrag}
 			\label{fig:f1}
 		\end{figure}
+		
 	\newpage
 	\section{Automat: ''Bibliothek''}
-		\begin{figure}[h]
+		\begin{sidewaystable}[H]
 			\centering
-			
 			\begin{tabular}{c | p{2.5cm} p{2.5cm} p{2.5cm} p{4cm}}
 				&	neues Buch	&	Buch abgeben	&	Buch ausleihen 	&	Ausleihfrist abgelaufen	\\ \hline
 									
@@ -73,7 +75,7 @@
 			
 			\caption{Tabellendarstelllung des Automaten}
 			\label{tab:t1}
-		\end{figure}
+		\end{sidewaystable}
 	\section{Automat für Vorfahrtsregeln}
 	
 		\begin{figure}[h]
