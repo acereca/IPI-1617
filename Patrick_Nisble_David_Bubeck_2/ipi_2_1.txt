@@ -1,0 +1,7 @@
+delta_taschenuhr = (2h4m-2h)/2 + (1h56m-2h)/2 + (1h-1h2m) + (1h2m-1h)
+
+geht vor: 	d_t > 0
+geht genau: 	d_t = 0
+geht nach: 	d_t < 0
+
+=> die Taschenuhr geht exakt, da alle Abweichungen der Uhren auf denen die Bestimmung des Deltas beruht zusammen 0 ergeben.
