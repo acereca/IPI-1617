@@ -10,3 +10,7 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+# IDE stuffs
+CMakeLists.txt
+.idea/
