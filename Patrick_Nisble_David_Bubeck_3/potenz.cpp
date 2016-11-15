@@ -1,4 +1,7 @@
-
+#include <iostream>
+#include <array>
+#include <list>
+#include <cmath>
 
 /// calculate square
 /// \param base to be squared
@@ -19,14 +22,14 @@ double power(double base, int pow){
     return (pow == 0)? 1 : (pow == 1)? base : ((pow % 2) == 0)? sq(power(base, pow/2)) : base * power(base, pow - 1) ;
 }
 
-/*
+
 int main(){
     std::list<std::array<double, 2>> examples = {{2, 0},{2,8},{3,2},{1.1,3},{20,10},{10,6},{0,217},{9,9}};
     for (auto elem: examples){
         std::cout << elem[0] << "^" << elem[1] << "=\t" << power(elem[0], elem[1]) << "\t\t" << std::pow(elem[0],elem[1]) << "\n";
     }
 }
-*/
+
 
 /*
     x^n     power(x,n)      pow(x,n)

@@ -14,3 +14,4 @@
 # IDE stuffs
 CMakeLists.txt
 .idea/
+bin/
