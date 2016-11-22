@@ -3,8 +3,9 @@
 //
 
 #include <cmath>
-#include <assert.h>
+#include <cassert>
 #include <iostream>
+#include <iomanip>
 
 /// calculate the cubic root of y using Newtons algorithm
 /// \param y
@@ -15,6 +16,7 @@ int main(){
 
     double list[] = {27,26,3,1293};
 
+    std::cout << std::setprecision(10) << std::fixed;
     for (auto entr: list){
         std::cout <<
                   "the cbrt of " << entr <<
