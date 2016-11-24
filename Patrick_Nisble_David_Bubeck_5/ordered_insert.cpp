@@ -1,43 +1,58 @@
 #include <iostream>
 #include <vector>
 
-
+/// insertion sort, elementwise
+/// \param list reference of sorted list
+/// \param in positive value to be inserted
+/// \throws invalid_argument for negative in
+void sorted_insertion(std::vector<int>& list, int in);
 
 int main() {
 
     std::vector<int> sorted_list{};
     int in = 0;
 
+    // do until interrupted
     while (true) {
-        std::cout << std::endl << "Zahl bitte: ";
+        std::cout << "Zahl bitte: ";
         std::cin >> in;
 
-        // stop at: in < 0 after std::cin
-        if (in < 0) break;
-
-        // in initial state sorted_list.size() == 0
-        if (sorted_list.size() == 0) {
-            sorted_list.push_back(in);
-            continue;
-        }
-
-        for (int i = 0; i < sorted_list.size(); i++){
-            if (in <= sorted_list[i]){
-                sorted_list.insert(sorted_list.begin()+i, in);
-                break;
-            } else if (i == sorted_list.size()-1){
-                sorted_list.push_back(in);
-                break;
-            }
-            // break after any kind of insertion
+        // catch negative numbers
+        try {
+            sorted_insertion(sorted_list, in);
+        } catch (std::invalid_argument& e) {
+            std::cout << "Zahl negativ!\n";
+            break;
         }
     }
 
-    std::cout << "{ ";
-    for (auto sorted_value: sorted_list) {
-        std::cout << std::to_string(sorted_value) << " ";
+    // write sorted_list to console
+    std::cout << "Terminiere mit entstandener Liste: { ";
+    for (int i = 0; i < sorted_list.size(); i++) {
+        std::cout << std::to_string(sorted_list[i]) << ((sorted_list.size()-1 == i)? "" :", ");
     }
-    std::cout << "}";
+    std::cout << " }";
 
     return 0;
+}
+
+void sorted_insertion (std::vector<int> &list, int in){
+    if (in < 0) throw std::invalid_argument("");
+
+    // either list is empty or the last elemnt is leq to in
+    if (list.empty() || list.at(list.size()-1) <= in) {
+        list.push_back(in);
+    } else {
+        // go through every elemnt of list
+        for (auto it = list.begin(); it < list.end(); it++){
+
+            // find first element in list to be greq to in
+            if (in <= *it){
+                list.insert(it, in);
+
+                // break after insertion
+                break;
+            }
+        }
+    }
 }

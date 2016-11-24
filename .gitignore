@@ -15,6 +15,7 @@
 CMakeLists.txt
 .idea/
 bin/
+cmake-build-debug/
 
 # atom
 .build-tools.cson
