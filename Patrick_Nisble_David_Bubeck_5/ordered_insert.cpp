@@ -2,7 +2,7 @@
 // Created by patrick on 24.11.16.
 // IPI-WS1617 5.1
 // "sorted insertion into array"
-// perfor sorted insertion for random numbers
+// perform sorted insertion for random numbers
 //
 
 #include <iostream>
