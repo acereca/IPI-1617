@@ -41,7 +41,7 @@ void pythagorean_triples(int bmax) {
 
             int c = a*a+b*b;
 
-            
+
             if (is_square(c)){
                 std::cout << a << "^2\t+ " << b << "^2\t= " << std::sqrt(c) << "^2" << "\n";
             }
