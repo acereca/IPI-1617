@@ -55,9 +55,6 @@ std::string mix(std::string stringInput) {
         else if(std::isalnum(stringInput[i]) && positionLastLetter <= i) {
             positionLastLetter = i;
         }
-        //else if(stringInput[i] == '-') {
-          //  positionLine = i;
-        //}
     }
 
     //if there is a "-" in our word it will destroy the readable effect so
