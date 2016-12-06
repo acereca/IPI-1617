@@ -42,13 +42,13 @@ int main() {
 
 std::vector<int> double_to_int(std::vector<double> v){
     std::vector<int> out(v.size(),0);
-    std::transform(v.begin(), v.end(), out.begin(), [](double in) {return std::round(in); });
+    std::transform(v.begin(), v.end(), out.begin(), [](double in){ return std::round(in); });
     return out;
 }
 
 std::vector<double> vec_rounded(std::vector<double> v) {
     std::vector<double> out(v.size());
-    std::transform(v.begin(), v.end(), out.begin(), [](double in){ return roundD(in, 2);});
+    std::transform(v.begin(), v.end(), out.begin(), [](double in){ return roundD(in, 2); });
     return out;
 }
 
