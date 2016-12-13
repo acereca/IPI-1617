@@ -11,12 +11,12 @@
     \section*{a)}
     für n=32 ist t=5s, was ist t für n=64 unter bestimmten Komplexitäten
     
-    \subsection*{i)} $log_2(n)$
+    \subsection*{i)} $\log_2(n)$
     
     \begin{align}
-        &k\cdot log_2(32) = 5\\
-        \Leftrightarrow & k = 1 \\
-        \Rightarrow & log_2(64) = 6
+        &k\cdot \log_2(32) = 5\\
+        \Leftrightarrow\  & k = 1 \\
+        \Rightarrow\  & \log_2(64) = 6
     \end{align}
     Der Algorithmus benötigt 6s für 64 Elemente
     
@@ -24,18 +24,18 @@
     
     \begin{align}
     &k\cdot 32 = 5\\
-    \Leftrightarrow & k = \frac 5 {32} \\
-    \Rightarrow & \frac 5 {32}\cdot 64 = 10
+    \Leftrightarrow\  & k = \frac 5 {32} \\
+    \Rightarrow\  & \frac 5 {32}\cdot 64 = 10
     \end{align}
     Der Algorithmus benötigt 10s für 64 Elemente
     
     
-    \subsection*{iii)} $n\cdot log_2(n)$
+    \subsection*{iii)} $n\cdot \log_2(n)$
     
     \begin{align}
-    &k\cdot 32 \cdot log_2(32) = 5\\
-    \Leftrightarrow & k = \frac 1 {32} \\
-    \Rightarrow & 64\cdot log_2(64) = 12
+    &k\cdot 32 \cdot \log_2(32) = 5\\
+    \Leftrightarrow\  & k = \frac 1 {32} \\
+    \Rightarrow\  & 64\cdot \log_2(64) = 12
     \end{align}
     Der Algorithmus benötigt 12s für 64 Elemente
     
@@ -44,8 +44,8 @@
     
     \begin{align}
     &k\cdot 32^2 = 5\\
-    \Leftrightarrow & k = \frac 5 {964} \\
-    \Rightarrow & \frac 5 {964} \cdot 64^2 = 20
+    \Leftrightarrow\  & k = \frac 5 {964} \\
+    \Rightarrow\  & \frac 5 {964} \cdot 64^2 = 20
     \end{align}
     Der Algorithmus benötigt 20s für 64 Elemente
     
@@ -53,52 +53,52 @@
     
     \begin{align}
     &k\cdot 2^{32} = 5\\
-    \Leftrightarrow & k = \frac 5 {2^{32}} \\
-    \Rightarrow & \frac 5 {2^{32}} \cdot 2^{64} = 5\cdot 2^{32}
+    \Leftrightarrow\  & k = \frac 5 {2^{32}} \\
+    \Rightarrow\  & \frac 5 {2^{32}} \cdot 2^{64} = 5\cdot 2^{32}
     \end{align}
     Der Algorithmus benötigt ca. 640 Jahre für 64 Elemente
     
     
     \section*{b)}
-    z.z: $\forall a,b>0: log_a(n) \in O(log_b(n)) = \{ f(n)\ |\ f(n)<k\cdot log_b(n), k\in \mathbb R, \text{ ab einem Punkt } n_0 \}$
+    z.z: $\forall a,b>0: \log_a(n) \in O(\log_b(n)) = \{ f(n)\ |\ f(n)<k\cdot \log_b(n), k\in \mathbb R, \text{ ab einem Punkt } n_0 \}$
     
     \begin{align}
-        \xrightarrow[nach Log.Ges.]{} log_a(n)&=\frac{log_b(n)}{log_b(a)}\\
-        \text{ mit } log_b(a) &= const.\\
-        \Rightarrow \frac{log_b(n)}{log_b(a)} &= k\cdot log_b(n),\\
-        \text{ mit } k&=\frac 1 {log_b(a)}\\
-        \Rightarrow log_a(n)&\in O(log_b(n))
+        \xrightarrow[nach Log.Ges.]{} \log_a(n)&=\frac{\log_b(n)}{\log_b(a)}\\
+        \text{ mit } \log_b(a) &= const.\\
+        \Rightarrow\  \frac{\log_b(n)}{\log_b(a)} &= k\cdot \log_b(n),\\
+        \text{ mit } k&=\frac 1 {\log_b(a)}\\
+        \Rightarrow\  \log_a(n)&\in O(\log_b(n))
     \end{align}
     
     \section*{c)}
-    Annahme: (effizient bis ineffizient) $log(n) < n^{1/2} < n\cdot log(n) < n^2 < 2^n$
+    Annahme: (effizient bis ineffizient) $\log(n) < n^{1/2} < n\cdot \log(n) < n^2 < 2^n$
     
     Test:
     \begin{itemize}
-        \item $log(n), n^{1/2}$
+        \item $\log(n), n^{1/2}$
         \begin{align}
-            \lim_{n\to \infty}&\frac{log(n)}{n^{1/2}} = 0\\
-            \Rightarrow &log(n) < n^{1/2} 
+            \lim_{n\to \infty}&\frac{\log(n)}{n^{1/2}} = 0\\
+            \Rightarrow\  &\log(n) < n^{1/2} 
         \end{align}
         
-        \item $n^{1/2}, n\cdot log(n)$
+        \item $n^{1/2}, n\cdot \log(n)$
         \begin{align}
-        \lim_{n\to \infty}&\frac{n^{1/2}}{n\cdot log(n)} = 0\\
-        \Rightarrow &n^{1/2}<n\cdot log(n) 
+        \lim_{n\to \infty}&\frac{n^{1/2}}{n\cdot \log(n)} = 0\\
+        \Rightarrow\  &n^{1/2}<n\cdot \log(n) 
         \end{align}
         
-        \item $n\cdot log(n), n^2$
+        \item $n\cdot \log(n), n^2$
         \begin{align}
-        \lim_{n\to \infty}&\frac{n\cdot log(n)}{n^{2}} = 0\\
-        \Rightarrow &n\cdot log(n) < n^2 
+        \lim_{n\to \infty}&\frac{n\cdot \log(n)}{n^{2}} = 0\\
+        \Rightarrow\  &n\cdot \log(n) < n^2 
         \end{align}
         
         \item $n^2, 2^n$
         \begin{align}
-        \lim_{n\to \infty}&\frac{n^{2}}{2^n} = \lim_{n\to \infty}\frac{2n}{2^n\cdot ln(n)} = \lim_{n\to \infty}\frac{2}{2^n(ln^2(n)+\frac 1 n)}= 0\\
-        \text{da } \lim_{n\to \infty} &\left( ln^2(n)+\frac 1 n \right)=\infty\\
-        \Rightarrow &n\cdot n^2 < 2^n 
+        \lim_{n\to \infty}&\frac{n^{2}}{2^n} = \lim_{n\to \infty}\frac{2n}{2^n\cdot \ln(n)} = \lim_{n\to \infty}\frac{2}{2^n(\ln^2(n)+\frac 1 n)}= 0\\
+        &\text{da } \lim_{n\to \infty} \left( \ln^2(n)+\frac 1 n \right)=\infty\\
+        \Rightarrow\  &n\cdot n^2 < 2^n 
         \end{align}
     \end{itemize}
-    $\Rightarrow$ die Annahme war Richtig (mit transitien Eigenschaften auf $\mathbb N$)
+    $\Rightarrow\ $ die Annahme war Richtig (mit transitiven Eigenschaften auf $\mathbb N$)
 \end{document}
