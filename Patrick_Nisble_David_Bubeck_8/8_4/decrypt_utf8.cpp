@@ -70,7 +70,7 @@ int main() {
     std::locale::global(codec);
 
     // Datei einlesen
-    std::wstring text = read_file("/home/patrick/github/IPI-1617/Patrick_Nisble_David_Bubeck_8/8_4/verschluesselt_utf8.txt");
+    std::wstring text = read_file("verschluesselt_utf8.txt");
 
     // Ihre Loesung hier
 
@@ -82,26 +82,30 @@ int main() {
 
     //fill characters with encrypted characters and their count.
     for (auto elem: text){
-        //TODO: np how to except
-        if (std::isalpha(elem) || elem == wchar_t(' ')){
-            if (std::isupper(elem, german)){
-                characters[std::tolower(elem, german)].count++;
-            } else {
-                characters[elem].count++;
-            }
+        //TODO: np how to excep
+        characters[elem].count++;
+    }
+
+    //
+    std::sort(characters.begin(), characters.end(), [](Character a, Character b){return a > b;});
+
+    std::wstring decr = read_file("buchstaben_haeufigkeit_utf8.txt");
+
+    std::reverse(decr.begin(), decr.end());
+
+    auto posd = decr.begin();
+    for (auto pose = characters.begin(); posd < decr.end(); pose++){
+        if (std::islower(pose->encrypted, german)) {
+            pose->clear = *posd;
+            std::cout << (char)pose->clear << "\n";
+            posd++;
         }
     }
 
-    std::cout << (int)wchar_t(' ');
+    std::sort(characters.begin(), characters.end(), [](Character a, Character b){return ((int)a.encrypted < (int)b.encrypted);});
 
-    // ascending order
-    std::sort(characters.begin(), characters.end(), [](Character a, Character b){return a > b;});
-
-    std::wstring decr = read_file("/home/patrick/github/IPI-1617/Patrick_Nisble_David_Bubeck_8/8_4/buchstaben_haeufigkeit_utf8.txt");
-
-    auto pos = decr.begin();
-    for (int i = 0; i< decr.size(); i++){
-
+    for (int i = 0; i < text.size(); i++){
+        text[i] = characters[(int)text[i]].clear;
     }
 
     // Ergebnis in Datei schreiben
